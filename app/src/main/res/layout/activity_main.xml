@@ -38,10 +38,10 @@
             android:layout_height="60dp"
             android:layout_marginEnd="10dp"
             android:background="@color/custom_gray"
-            app:layout_constraintBottom_toBottomOf="@id/numpicker1"
-            app:layout_constraintEnd_toStartOf="@id/numpicker1"
+            app:layout_constraintBottom_toBottomOf="@id/numPicker1"
+            app:layout_constraintEnd_toStartOf="@id/numPicker1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/numpicker1" />
+            app:layout_constraintTop_toTopOf="@id/numPicker1" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnChangePW"
@@ -54,33 +54,33 @@
             app:layout_constraintTop_toBottomOf="@id/btnOpen" />
 
         <NumberPicker
-            android:id="@+id/numpicker1"
+            android:id="@+id/numPicker1"
             android:layout_width="30dp"
             android:layout_height="120dp"
             android:background="@color/custom_gray"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/numpicker2"
+            app:layout_constraintEnd_toStartOf="@id/numPicker2"
             app:layout_constraintHorizontal_chainStyle="packed"
             app:layout_constraintStart_toEndOf="@id/btnOpen"
             app:layout_constraintTop_toTopOf="parent" />
 
         <NumberPicker
-            android:id="@+id/numpicker2"
+            android:id="@+id/numPicker2"
             android:layout_width="30dp"
             android:layout_height="120dp"
             android:background="@color/custom_gray"
-            app:layout_constraintEnd_toStartOf="@id/numpicker3"
-            app:layout_constraintStart_toEndOf="@id/numpicker1"
-            app:layout_constraintTop_toTopOf="@+id/numpicker1" />
+            app:layout_constraintEnd_toStartOf="@id/numPicker3"
+            app:layout_constraintStart_toEndOf="@id/numPicker1"
+            app:layout_constraintTop_toTopOf="@+id/numPicker1" />
 
         <NumberPicker
-            android:id="@+id/numpicker3"
+            android:id="@+id/numPicker3"
             android:layout_width="30dp"
             android:layout_height="120dp"
             android:background="@color/custom_gray"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/numpicker2"
-            app:layout_constraintTop_toTopOf="@id/numpicker1" />
+            app:layout_constraintStart_toEndOf="@id/numPicker2"
+            app:layout_constraintTop_toTopOf="@id/numPicker1" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
