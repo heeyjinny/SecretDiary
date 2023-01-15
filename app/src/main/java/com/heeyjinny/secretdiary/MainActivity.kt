@@ -114,9 +114,10 @@ class MainActivity : AppCompatActivity() {
                 //인텐트를 통해 넘기기...
                 startActivity(Intent(this,DiaryActivity::class.java))
 
+                //넘버피커 값 초기화
                 numPicker1.value = 0
                 numPicker2.value = 0
-                numPicker3. value = 0
+                numPicker3.value = 0
 
             }else{
                 //5-5
@@ -172,9 +173,10 @@ class MainActivity : AppCompatActivity() {
                     .setNegativeButton("확인"){_,_ -> }
                     .create().show()
 
+                //넘버피커 값 초기화
                 numPicker1.value = 0
                 numPicker2.value = 0
-                numPicker3. value = 0
+                numPicker3.value = 0
 
                 //6-3-1 ***
                 //위 passwordPreferences.edit{}코드를 더 편리하게 사용하는 방법
