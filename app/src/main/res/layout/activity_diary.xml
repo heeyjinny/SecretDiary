@@ -7,6 +7,7 @@
     android:padding="24dp">
 
     <EditText
+        android:textColor="@color/black"
         android:id="@+id/etContent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -16,6 +17,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:background="@color/white"
         android:gravity="start|top"
-        android:padding="10dp"/>
+        android:padding="12dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
