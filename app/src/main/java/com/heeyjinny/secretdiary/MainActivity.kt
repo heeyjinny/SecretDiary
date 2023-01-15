@@ -1,6 +1,7 @@
 package com.heeyjinny.secretdiary
 
 import android.content.Context
+import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -103,14 +104,15 @@ class MainActivity : AppCompatActivity() {
             //SharedPreference를 사용해 특정 파일에 접근한 값(passwordPreferences)을 비교
             //get메서드 입력값의 파라미터는 기본값을 지정할 수 있음
             //기본값(defaultValue)를 지정하면 해당 키의 데이터가 없을 때 지정한 기본값 반환
+            //앱 처음 실행하면 데이터가 없으므로 000이 비밀번호의 기본값으로 설정된다고 보면 됨...
             if (passwordPreferences.getString("password", "000").equals(passwordFromUser)){
 
                 //5-4
                 //만약 저장되어있는 패스워드가 현재 패스워드와 같을 때
                 //패스워드 성공
                 //다음 페이지인 다이어리 페이지로 이동
-                //TODO 다이어리 페이지 작성 후 넘기기...
-                //startActivity()
+                //인텐트를 통해 넘기기...
+                startActivity(Intent(this,DiaryActivity::class.java))
 
             }else{
                 //5-5
