@@ -114,6 +114,10 @@ class MainActivity : AppCompatActivity() {
                 //인텐트를 통해 넘기기...
                 startActivity(Intent(this,DiaryActivity::class.java))
 
+                numPicker1.value = 0
+                numPicker2.value = 0
+                numPicker3. value = 0
+
             }else{
                 //5-5
                 //패스워드 실패
@@ -167,6 +171,10 @@ class MainActivity : AppCompatActivity() {
                     .setMessage("비밀번호가 변경되었습니다.")
                     .setNegativeButton("확인"){_,_ -> }
                     .create().show()
+
+                numPicker1.value = 0
+                numPicker2.value = 0
+                numPicker3. value = 0
 
                 //6-3-1 ***
                 //위 passwordPreferences.edit{}코드를 더 편리하게 사용하는 방법
