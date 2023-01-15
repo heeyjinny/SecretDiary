@@ -33,6 +33,9 @@
         app:layout_constraintVertical_bias="0.45">
 
         <androidx.appcompat.widget.AppCompatButton
+            android:text="OPEN"
+            android:textSize="10sp"
+            android:textColor="@color/white"
             android:id="@+id/btnOpen"
             android:layout_width="40dp"
             android:layout_height="60dp"
